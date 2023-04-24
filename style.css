@@ -1,3 +1,6 @@
-*{
+/* *{
     border: 1px solid black;
+} */
+nav ul li a{
+    color: white !important;
 }
