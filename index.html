@@ -31,7 +31,7 @@
                         <a class="nav-link text-warning" href="acteurs.html">Les Acteurs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning" href="#">Nous contacter</a>
+                        <a class="nav-link text-warning" href="#" id="btncontact">Nous contacter</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -57,7 +57,7 @@
             <div class="carousel-item active">
                 <img src="images/batman2.jpg" class="d-none d-md-block w-100" alt="...">
                 <img src="images/batman.jpg" class="d-block d-md-none w-100 mt-5" alt="">
-                <div class="carousel-caption d-none d-md-block bg-black bg-opacity-75">
+                <div class="carousel-caption d-none d-md-block bg-black bg-opacity-75 ">
                     <h5>Batman</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio in laborum deserunt atque repellat. Quisquam doloribus magnam aperiam impedit suscipit doloremque? Necessitatibus sapiente amet hic voluptatibus ipsam id debitis doloribus.</p>
                 </div>
@@ -100,10 +100,43 @@
     </div>
     <footer class="text-white fixed-bottom text-center">&copy; NicoCiné 1918-2023 | NicoCiné.contact@gmail.com</footer>
 
+    <!-- Formulaire -->
+    <div class="container w-50" style="margin-top: 20vh;" id="contact">
+        <div data-bs-theme="dark" class="offset-11 mb-2" id="croixContact">
+            <button type="button" class="btn-close opacity-100 bg-warning offset-7" aria-label="Close"></button>
+          </div>
+        <form>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingNom" placeholder="Votre nom" required
+                    pattern=".{1,49}">
+                <label for="floatingNom">Votre nom</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput">Votre adresse mail</label>
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-select" id="floatingSelect" aria-label="L'objet de votre demande" required>
+                    <option selected>--Choisissez--</option>
+                    <option value="1">Soumettre des commentaires</option>
+                    <option value="2">Demande de renseignements</option>
+                </select>
+                <label for="floatingSelect">L'objet de votre demande</label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Votre commentaire" id="floatingTextarea2"
+                    style="height: 100px" required></textarea>
+                <label for="floatingTextarea2">Votre commentaire</label>
+            </div>
+            <input class="btn btn-outline-warning col-12 mb-3 w-25" type="submit">
+        </form>
+    </div>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper-utils.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="contact.js"></script>
+
 </body>
 
 </html>
